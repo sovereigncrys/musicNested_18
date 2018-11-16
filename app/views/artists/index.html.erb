@@ -1,0 +1,7 @@
+<h1>New Artist?</h1>
+<%= link_to "Create Artist", new_billboard_artist_path %>
+    <ul>
+        <% @artists.each do |b| %>
+            <li><%= link_to b.name, b %></li>
+        <% end %>
+    </ul>
